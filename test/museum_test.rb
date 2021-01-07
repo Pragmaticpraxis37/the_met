@@ -150,7 +150,7 @@ class MuseumTest < Minitest::Test
     dmns.admit(patron_2)
     dmns.admit(patron_3)
 
-    expected = [parton_1, patron_3]
+    expected = [patron_1, patron_3]
 
     assert_equal expected, dmns.ticket_lottery_contestants(dead_sea_scrolls)
   end
